@@ -7,6 +7,8 @@ while True:
     raw = sensor.read_u16()  # 0 ~ 65535
     volt = raw * 3.3 / 65535
     temp = 27 - (volt - 0.706) / 0.001721
+    h = 40
     print("temp = {:.1f} C".format(temp))
+    print("h = {:.1f} C".format(h))
     time.sleep(2)
 
